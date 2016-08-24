@@ -61,7 +61,7 @@ function accessibility_map() {
   startMarker = L.marker(DEFAULT_CENTER, {
     draggable: true,
     icon     : whiteIcon
-  }).addTo(m);
+  }); //.addTo(m);
 
   /* setup leaflet canvas webgl overlay */
   o = L.canvasOverlay().drawing(drawGL(true)).addTo(m);
@@ -79,7 +79,7 @@ function accessibility_map() {
       subdomains: 'abcd',
       maxZoom: 18
     }
-  ).addTo(m);
+  ); //.addTo(m);
 
 
   /* use a r360 time slider to adjust travel time */
@@ -144,7 +144,7 @@ function accessibility_map() {
       }
     ]
   });
-  travelTypeButtons.addTo(m);
+  //travelTypeButtons.addTo(m);
   travelTypeButtons.onChange(function(value){
     TRAVEL_TYPE = travelTypeButtons.getValue();
     TILE_CACHE.resetHard();
@@ -182,7 +182,7 @@ function accessibility_map() {
     TRAVEL_TIME = travelTimeControl.getMaxValue();
     drawGL();
   });
-  travelTimeControl.addTo(m);
+  //travelTimeControl.addTo(m);
   travelTimeControl.setPosition('topright');
 
   /* init cache for tile buffers for current zoom level */
@@ -223,7 +223,7 @@ function accessibility_map() {
   });
 
   let zoomControl = L.control.zoom({ position: 'bottomright' });
-  zoomControl.addTo(m);
+  //zoomControl.addTo(m);
 }
 
 /**
