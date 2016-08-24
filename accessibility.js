@@ -400,6 +400,9 @@ function drawGL() {
     /* disable depth testing */
     gl.disable(gl.DEPTH_TEST);
 
+    /* clear color turquoise contrast fully opaque */
+    gl.clearColor(0.0, 1.0, 1.0, 1.0);
+
     /* clear color buffer for redraw */
     gl.clear(gl.COLOR_BUFFER_BIT);
 
