@@ -372,7 +372,7 @@ function requestTile(x, y, z, callback) {
 
   let travelOptions = r360.travelOptions();
   travelOptions.setServiceKey('uhWrWpUhyZQy8rPfiC7X');
-  travelOptions.setServiceUrl('https://dev.route360.net/mobie/v2/');
+  travelOptions.setServiceUrl('https://dev.route360.net/mobie/');
   travelOptions.addSource(startMarker);
   travelOptions.setMaxRoutingTime(9999);
   travelOptions.setTravelType(TRAVEL_TYPE);
