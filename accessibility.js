@@ -417,7 +417,8 @@ function drawGL() {
     let zoom = m.getZoom();
     let scale = Math.pow(2, zoom) * 256.0;
     let offset = latLonToPixels(topLeft.lat, topLeft.lng);
-    let width = Math.max(zoom - 12.0, 1.0);
+    //let width = Math.max(zoom - 12.0, 1.0);
+    let width = 1.0;
 
     /* define sizes of vertex and texture coordinate buffer objects */
     let vtxSize = 2;
