@@ -18,7 +18,7 @@ const DEFAULT_ZOOM = 13;
 let TILE_CACHE;
 
 /* default travel time is 30 minutes */
-let TRAVEL_TIME = 1800;
+let TRAVEL_TIME = 7200;
 let TRAVEL_TYPE = 'walk';
 
 /* travel time control (r360) and a marker */

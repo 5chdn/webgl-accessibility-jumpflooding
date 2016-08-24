@@ -70,7 +70,8 @@
         if (v_coord > u_time) {
           gl_FragColor = vec4(0.0, 0.0, 0.0, 0.0); /* hide unreachable roads */
         } else {
-          gl_FragColor = texture2D(u_texture, vec2(abs(t_coord), 0.5));
+          //gl_FragColor = texture2D(u_texture, vec2(abs(t_coord), 0.5));
+          gl_FragColor = vec4(t_coord, 0.0, 0.0, 1.0);
         }
       }
     </script>
